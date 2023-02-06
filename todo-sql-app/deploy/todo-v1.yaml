@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: todo
-        image: haraldu/todo-app:latest
+        image: rishikeshops/todo-app-new
         ports:
         - containerPort: 3000
         

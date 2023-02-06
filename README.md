@@ -53,6 +53,3 @@ A dynamic todo app deployed on Kubernetes cluster.
 
 
 
-
-
-

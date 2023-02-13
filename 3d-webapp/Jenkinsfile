@@ -7,14 +7,9 @@ pipeline {
                 git url: 'https://github.com/RishikeshOps/3d-webapp-Kubernetes.git', branch: 'master' 
             }
         }
-        stage('Start'){
-            steps{
-                sh 'cd 3d-webapp/'
-            }
-        }
         stage('Build'){
             steps{
-                sh 'docker build . -t rishikeshops/3d-webapp:latest'
+                sh 'docker build -t rishikeshops/3d-webapp:latest 3d-webapp/.'
             }
         }
         stage('Push'){
